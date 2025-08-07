@@ -1,3 +1,4 @@
+import { Header } from "@/components/header";
 import "./globals.css";
 
 export default function RootLayout({
@@ -8,7 +9,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className="antialiased">
-        {children}
+        <Header />
+
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );
